@@ -1,0 +1,36 @@
+extends layout
+block content
+  h1= judul
+  div(id="input_page_wrapper")
+    div(id="input")
+      form(id="input_form", name="books", method="post", action="/books")
+
+        div(class="label_box")
+          label(for="isbn") ISBN
+        input(type="text", placeholder="ISBN ", name="isbn")
+
+        div(class="label_box")
+          label(for="title") Judul
+        input(type="text", placeholder=" ", name="title")
+
+        div(class="label_box")
+          label(for="author") Author
+        input(type="text", placeholder=" ", name="author")
+
+        div(class="label_box")
+          label(for="author") Desc Author
+        input(type="text", placeholder=" ", name="descAuthor")
+
+        div(class="label_box")
+          label(for="author") Publisher
+        input(type="text", placeholder=" ", name="Publisher")
+
+        div(class="label_box")
+          label(for="priceUS") priceUS
+        input(type="float", placeholder=" ", name="priceUS")
+
+        div(class="label_box")
+          label(for="priceIDR") Price IDR
+        input(type="number", placeholder=" ", name="priceIDR")
+
+        button(id="submit", name="submit", type="submit") submit
