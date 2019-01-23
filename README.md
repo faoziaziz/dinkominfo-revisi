@@ -1,3 +1,10 @@
+# Cara menggunakan 
+
+```sh
+
+yarn install
+yarn start
+```
 # Backend Aziz Amerul Faozi
 
 ```sh
